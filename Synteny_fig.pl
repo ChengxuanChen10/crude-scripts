@@ -8,7 +8,7 @@ $len=shift;
 $len2=shift;
 $len3=shift;
 
-die "perl $0 <syn_result1.txt> <syn_result2.txt> <chr_len.txt> <chr_len.txt> <chr_len.txt>\n" unless ($len3);
+die "perl $0 <syn_result1.txt> <syn_result2.txt> <chr_len1.txt> <chr_len2.txt> <chr_len3.txt>\n" unless ($len3);
 
 my $svg = SVG->new(width=>1500, height=>1000);
 
