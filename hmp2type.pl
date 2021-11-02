@@ -8,7 +8,7 @@ my $in=shift;
 my $miss_rate=shift;
 my $chi_p=shift;
 
-die "perl $0 <SNP.table> <miss_rate:0.25> <chi_p:0.05>\n" unless ($in);
+die "perl $0 <SNP.table> <miss_rate:0.25> <chi_p:0.05> > <output> \n" unless ($in);
 
 my $miss_rate=0.25 unless ($miss_rate);
 my $chi_p=0.05 unless ($chi_p);
