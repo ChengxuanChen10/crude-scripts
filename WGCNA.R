@@ -60,7 +60,7 @@ dev.off()
 
 #################################################################################
 
-# Output result 
+# Output gene module and MEs 
 
 geneClors=data.frame(rownames(data),moduleColors)
 write.table(geneClors,file="R.netcolor.xls",sep="\t")
