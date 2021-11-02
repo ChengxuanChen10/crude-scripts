@@ -55,8 +55,8 @@ while (<IN>)
 		next if ($ml < (1-$miss_rate)*@g);  # miss rate check
 		my (@obs,@rat,@chi);
 		@obs=($count{"hh"},$count{"hk"},$count{"kk"});
-        @rat=(1,2,1);
-        @chi=&chisq(\@obs,\@rat);
+        	@rat=(1,2,1);
+       		@chi=&chisq(\@obs,\@rat);
 		next if ($chi[-1] < $chi_p); # chi-test pvalue check
 
 		my $geno=join "\t",@g;
@@ -83,8 +83,8 @@ while (<IN>)
 		next if ($ml < (1-$miss_rate)*@g);  # miss rate check
 		my (@obs,@rat,@chi);
 		@obs=($count{"lm"},$count{"ll"});
-        @rat=(1,1);
-        @chi=&chisq(\@obs,\@rat);
+        	@rat=(1,1);
+        	@chi=&chisq(\@obs,\@rat);
 		next if ($chi[-1] < $chi_p); # chi-test pvalue check
 
 		my $geno=join "\t",@g;
@@ -111,8 +111,8 @@ while (<IN>)
 		next if ($ml < (1-$miss_rate)*@g);  # miss rate check
 		my (@obs,@rat,@chi);
 		@obs=($count{"np"},$count{"nn"});
-        @rat=(1,1);
-        @chi=&chisq(\@obs,\@rat);
+        	@rat=(1,1);
+        	@chi=&chisq(\@obs,\@rat);
 		next if ($chi[-1] < $chi_p); # chi-test pvalue check
 
 		my $geno=join "\t",@g;
