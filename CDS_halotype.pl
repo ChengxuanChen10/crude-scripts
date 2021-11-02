@@ -7,7 +7,7 @@ use warnings;
 my $in=shift;
 my $in2=shift;
 
-die "perl $0 <gff> <hmp>\n" unless ($in2);
+die "perl $0 <gff> <hmp> > <output> \n" unless ($in2);
 
 open IN,$in or die;
 my (%info,%g);
